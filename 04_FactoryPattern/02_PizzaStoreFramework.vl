@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="VsqWINngtX2PykhrrgexHp" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
+  <NugetDependency Id="TWA5lxivdnSO2osAWTYuFg" Location="VL.CoreLib" Version="2019.1.0-959" />
+  <Patch Id="J8xoAUfPKhpMv3GR4eBoNU">
+    <Canvas Id="KlWjBt6a27wLHH9Pcqp0RP" DefaultCategory="PizzaStoreFramework" CanvasType="FullCategory">
+      <!--
+
+    ************************ SimplePizzaFactory ************************
+
+-->
+      <Node Name="SimplePizzaFactory" Bounds="121,546" Id="L33pGPpnFoFLY8U4hTzCZp">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="VWc34Tw141XOIInkKuq0Eq">
+          <Canvas Id="TqcEsTEX8ZmNggku6iDAYI" CanvasType="Group">
+            <Node Bounds="592,737,658,19" Id="QGuuA7sKR9mM6Cdi1i0jQV">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Switch" />
+                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="LmkJcf2aY0gMdcfULVWtOX" Name="Index" Kind="InputPin" />
+              <Pin Id="RUy3jgQeqZ7QJE6Rp6veYD" Name="Input" Kind="InputPin" />
+              <Pin Id="GPKKNGQQZ1QPTNdL9R9jDk" Name="Input 2" Kind="InputPin" />
+              <Pin Id="VrYQTtoZ1XIMKJi6T2AtS8" Name="Input 3" Kind="InputPin" />
+              <Pin Id="NEE1kStGGV3PUAClA92C90" Name="Input 4" Kind="InputPin" />
+              <Pin Id="NyQQwpJ731EPZ3wZzpzwA3" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="MCOuUg8JJCvOlkPxASArOL" Bounds="560,387" />
+            <Pad Id="IxsfXDn6bzBLHb2ymwGnJ4" Bounds="657,332,57,0" ShowValueBox="true" isIOBox="true">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+              <p:Value>
+                <Item>cheese</Item>
+                <Item>pepperoni</Item>
+                <Item>clam</Item>
+                <Item>veggie</Item>
+              </p:Value>
+            </Pad>
+            <Node Bounds="623,435,144,90" Id="Dul7D97etNTMToCpKVTaGw">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="NLMfqCkSCslO7snkFTcsDU" Name="Break" Kind="OutputPin" />
+              <Patch Id="UR5WpUdybYJOMGDNBQAHu2" ManuallySortedPins="true">
+                <Patch Id="CG5dul8A17PPQQRHTsp7aC" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="EZaiVAZbRdMPeJwgjMKrz2" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="KeyNWjdYgEjO5lPrAZLIgU" Name="Index" Kind="InputPin" />
+                  <Pin Id="HEAGV1A2rLHOsU4byMDGfA" Name="Break" Kind="OutputPin" />
+                </Patch>
+                <Patch Id="Nfn4JJXQ7JjPskeKZ8abnn" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="635,469,25,19" Id="Qp6S1NhDI8DOSVtykXjU2N">
+                  <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="=" />
+                  </p:NodeReference>
+                  <Pin Id="JmcWw9RulwYL5WQ0kZVwjF" Name="Input" Kind="InputPin" />
+                  <Pin Id="LZmn6i5gKLfLDNcJ5XOPmo" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="S6puSESZfzcMYEtc8JNhWI" Name="Result" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="LBa2lcYB8EpNa07rcbzdNm" Bounds="637,508" />
+                <ControlPoint Id="BqRt72lwmmqMC6BydOLNTo" Bounds="718,486" />
+              </Patch>
+              <ControlPoint Id="Bbz3WcV9b9wLe4leem4iZk" Bounds="657,441" Alignment="Top" />
+              <ControlPoint Id="J73EcdbtDjZNa1THJOv62j" Bounds="718,514" Alignment="Bottom" />
+              <ControlPoint Id="IxZ9PVKNk5QN0UNYg7kWE5" Bounds="717,441" Alignment="Top" />
+            </Node>
+            <Node Bounds="592,582,36,19" Id="PEAwPEJ2tKJQTjS8YOVWUl">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="S+H" />
+                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Ge0Vm2oQuNpLld6xVnm0lq" Name="Value" Kind="InputPin" />
+              <Pin Id="ECiXlsN74huMhHMsrhYdQY" Name="Sample" Kind="InputPin" />
+              <Pin Id="L2PPM46SC8hMsmuOCvZhpo" Name="Value" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="755,620,85,85" Id="Nv1zkRkrvd6OxPO8uVzWyk">
+              <p:NodeReference>
+                <Choice Kind="ApplicationRegion" Name="Delegate" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="UwNfbPYLfZ5PL0L0imKXPe" Name="Functionality" Kind="OutputPin" />
+              <Patch Id="UI0qg6pVzPyQFWk8SItWlb" ManuallySortedPins="true">
+                <Pin Id="Ic3bHjRDWZNMLjBrLlBTPZ" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="FisPzD9oNK8MaBv9HrD3de" Bounds="769,688" />
+                <Node Bounds="767,643,61,26" Id="E43KUMBLDg8MdHTz2cHZC6">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.CheesePizza" LastSymbolSource="callmenames-2019-11-20.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="CheesePizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="Mv26qYiw4yzPVda3cjIyrD" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="919,620,95,85" Id="RPecWIhDQ8COrlwuDxlR2E">
+              <p:NodeReference>
+                <Choice Kind="ApplicationRegion" Name="Delegate" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="CoDNxkSo1N0MnyvxsUBzJK" Name="Functionality" Kind="OutputPin" />
+              <Patch Id="RCTk9nGLEPsP8bfUT3qdgi" ManuallySortedPins="true">
+                <Pin Id="Sj0gYY7ZDR7NG4xpjGnJq9" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="RsX216bo61WL1BGi2p1zyl" Bounds="933,688" />
+                <Node Bounds="931,643,71,26" Id="DTHdeDILRh7NYIxB71ln4z">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.PepperoniPizza" LastSymbolSource="callmenames-2019-11-20.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="PepperoniPizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="ChnkPOTKck7MQtC0Rg8HJf" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="592,801,79,26" Id="JHK6nUApPZJLRxXKBzdIpj">
+              <p:NodeReference LastCategoryFullName="Primitive.Delegates.Delegate (0 -&gt; 1)" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Invoke" />
+                <CategoryReference Kind="FuncType" Name="Delegate (0 -&gt; 1)" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="CRzbdezzv1kO0snh3Qpq8k" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TSTTt5jvhirNBloveeFWYs" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1082,620,77,86" Id="GHHHERyWmDiO3iVC5qf7LT">
+              <p:NodeReference>
+                <Choice Kind="ApplicationRegion" Name="Delegate" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="JNgCB1hcd11Pabs7oVd3Wh" Name="Functionality" Kind="OutputPin" />
+              <Patch Id="MN6NwjUIbwfOC0zeYB8AdO" ManuallySortedPins="true">
+                <Pin Id="DgYphImKbERNEpVX246TB9" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="AE78vspIdNgNXAAS4UkmJZ" Bounds="1096,688" />
+                <Node Bounds="1094,643,53,26" Id="NlAV1gc0b99MaMCAUO47yB">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.ClamPizza" LastSymbolSource="callmenames-2019-11-20.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="ClamPizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="AURM41ueUCzLfVUKJeO4JM" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="1245,620,83,85" Id="BvJ8XVxmzOSN716osfmhb8">
+              <p:NodeReference>
+                <Choice Kind="ApplicationRegion" Name="Delegate" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="CoEai93ez2KQXTig8wm3FD" Name="Functionality" Kind="OutputPin" />
+              <Patch Id="VVzFcL20IeIOjcb7Gx7shJ" ManuallySortedPins="true">
+                <Pin Id="G3rRs4TudriLCwcZ3YPNrD" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="QeDR8CyUWh5Pc2MkwzvgjL" Bounds="1259,688" />
+                <Node Bounds="1257,643,59,26" Id="MgtM7QKJBl5LD9phY61lwh">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.VeggiePizza" LastSymbolSource="callmenames-2019-11-20.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="VeggiePizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="BL9Xic90Bz6OyTUi87vsys" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="592,857,48,19" Id="QWuuc0doPIFNocHMUv0uWZ">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CastAs" />
+              </p:NodeReference>
+              <Pin Id="FoAvLiQ3qJqNpxzFhE2el0" Name="Input" Kind="StateInputPin" />
+              <Pin Id="G3SYQEOohrzOY0ecJMqsyA" Name="Default" Kind="InputPin" />
+              <Pin Id="BqYnJSeabJYQKD6PJ8DdTh" Name="Result" Kind="OutputPin" />
+              <Pin Id="KZ2SBr8u7hqNF3PS0658Sy" Name="Success" Kind="OutputPin" />
+            </Node>
+            <Pad Id="MOqkA29mAJ4QJHCRdxaMCi" Bounds="594,895">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="IPizza" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="CEOtuk6a1VQQDAIbbHELkm" Bounds="594,930" />
+          </Canvas>
+          <Patch Id="DzQJ78RAaQuPKOXfzWsEM9" Name="Create" />
+          <ProcessDefinition Id="EAYNeIVTL7VLEkQexAvAVJ" IsHidden="true">
+            <Fragment Id="QIrqHkTFUTYPWLt3FcYomU" Patch="DzQJ78RAaQuPKOXfzWsEM9" Enabled="true" />
+            <Fragment Id="UwDAQvEQdcmOPVWN44u02x" Patch="ItEsick8uyNOJk3FO2LEtc" Enabled="true" />
+            <Fragment Id="FmF3z1jpA4pN4F0vHLLAn6" Patch="POynXOMcjWFP9EmQ0PLsxR" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="ItEsick8uyNOJk3FO2LEtc" Summary="Creates an IPizza based on Pizza Type value" Remarks="Accepted types are : chesse, pepperoni, clam, veggie" Name="CreatePizza" ParticipatingElements="QGuuA7sKR9mM6Cdi1i0jQV,JHK6nUApPZJLRxXKBzdIpj,QWuuc0doPIFNocHMUv0uWZ">
+            <Pin Id="Ge8NZw7MGEpMvOnBoDU2M3" Name="Pizza Type" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OZ9O7mcZbcfLqkK5DRGOGd" Name="Result" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="SimpleFactory" LastSymbolSource="callmenames-2019-11-20.vl">
+                <Choice Kind="TypeFlag" Name="IPizza" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Patch Id="POynXOMcjWFP9EmQ0PLsxR" Name="Update" />
+          <Link Id="KqRxr8Ia7QMLRSj6p4awj8" Ids="Ge8NZw7MGEpMvOnBoDU2M3,MCOuUg8JJCvOlkPxASArOL" IsHidden="true" />
+          <Link Id="QjjvXF6iJIAL6MvHdcPvwK" Ids="IxsfXDn6bzBLHb2ymwGnJ4,Bbz3WcV9b9wLe4leem4iZk" />
+          <Link Id="TV5IzRPfeAwPbay4zLAmDn" Ids="MCOuUg8JJCvOlkPxASArOL,JmcWw9RulwYL5WQ0kZVwjF" />
+          <Link Id="LwUTm5xdz7sPCGiqyOCySD" Ids="Bbz3WcV9b9wLe4leem4iZk,LZmn6i5gKLfLDNcJ5XOPmo" />
+          <Link Id="JW0AKpILeRlMOjtzY2JjWr" Ids="LBa2lcYB8EpNa07rcbzdNm,HEAGV1A2rLHOsU4byMDGfA" IsHidden="true" />
+          <Link Id="KoBZe5zvuD6OzAtGN2p4uS" Ids="S6puSESZfzcMYEtc8JNhWI,LBa2lcYB8EpNa07rcbzdNm" />
+          <Link Id="V8aWeckCinhNWnjNNVHgUh" Ids="KeyNWjdYgEjO5lPrAZLIgU,BqRt72lwmmqMC6BydOLNTo" IsHidden="true" />
+          <Link Id="H5Q3DrFJNE6MttrWjIKpsm" Ids="IxZ9PVKNk5QN0UNYg7kWE5,J73EcdbtDjZNa1THJOv62j" IsFeedback="true" />
+          <Link Id="AqvrEp8qr0yP55mXcScO5n" Ids="BqRt72lwmmqMC6BydOLNTo,J73EcdbtDjZNa1THJOv62j" />
+          <Link Id="OckCDW4ExluL4EKUdUDY5e" Ids="J73EcdbtDjZNa1THJOv62j,Ge0Vm2oQuNpLld6xVnm0lq" />
+          <Link Id="EjHs5H551FZQbuEMt2EvMw" Ids="NLMfqCkSCslO7snkFTcsDU,ECiXlsN74huMhHMsrhYdQY" />
+          <Link Id="Fw4kRsc19rVOaKNKOtG0ep" Ids="L2PPM46SC8hMsmuOCvZhpo,LmkJcf2aY0gMdcfULVWtOX" />
+          <Link Id="H7POCrrXuGFOQTp8WNF6fB" Ids="FisPzD9oNK8MaBv9HrD3de,Ic3bHjRDWZNMLjBrLlBTPZ" IsHidden="true" />
+          <Link Id="KInRtvnYz1UNQbHdbHqevf" Ids="UwNfbPYLfZ5PL0L0imKXPe,RUy3jgQeqZ7QJE6Rp6veYD" />
+          <Link Id="KUlCftkYGCULKHcWNoynBU" Ids="Mv26qYiw4yzPVda3cjIyrD,FisPzD9oNK8MaBv9HrD3de" />
+          <Link Id="NHPNwKRlNH4PCQFQZbCuGf" Ids="RsX216bo61WL1BGi2p1zyl,Sj0gYY7ZDR7NG4xpjGnJq9" IsHidden="true" />
+          <Link Id="P8KzoeDTlmtM7ct0riFjwT" Ids="CoDNxkSo1N0MnyvxsUBzJK,GPKKNGQQZ1QPTNdL9R9jDk" />
+          <Link Id="Gf6QT1QYHcKNi78xPAlRKh" Ids="ChnkPOTKck7MQtC0Rg8HJf,RsX216bo61WL1BGi2p1zyl" />
+          <Link Id="Kg06u8xAuOdLe28rIDRpx8" Ids="NyQQwpJ731EPZ3wZzpzwA3,CRzbdezzv1kO0snh3Qpq8k" />
+          <Link Id="Qapx22TA89aNyhw14BL8NA" Ids="AE78vspIdNgNXAAS4UkmJZ,DgYphImKbERNEpVX246TB9" IsHidden="true" />
+          <Link Id="Ef9nlOMHLncQXTJYGQkcAz" Ids="JNgCB1hcd11Pabs7oVd3Wh,VrYQTtoZ1XIMKJi6T2AtS8" />
+          <Link Id="MVg8REGGWEEODJrjLuGyem" Ids="AURM41ueUCzLfVUKJeO4JM,AE78vspIdNgNXAAS4UkmJZ" />
+          <Link Id="Jv4m4fiRbEuNuTziJ93OfQ" Ids="QeDR8CyUWh5Pc2MkwzvgjL,G3rRs4TudriLCwcZ3YPNrD" IsHidden="true" />
+          <Link Id="JE0WxuSZGy1PfJdZJnqI7V" Ids="CoEai93ez2KQXTig8wm3FD,NEE1kStGGV3PUAClA92C90" />
+          <Link Id="Cdz7JTsoR2OMCPUrDSEZs1" Ids="BL9Xic90Bz6OyTUi87vsys,QeDR8CyUWh5Pc2MkwzvgjL" />
+          <Link Id="KPYJ3RtOA43MJ6JmHfF2V8" Ids="TSTTt5jvhirNBloveeFWYs,FoAvLiQ3qJqNpxzFhE2el0" />
+          <Link Id="K65RgEVQahXNZlmbZ8J5Bk" Ids="BqYnJSeabJYQKD6PJ8DdTh,MOqkA29mAJ4QJHCRdxaMCi" />
+          <Link Id="MSgD2VRBgSAOaekgtPerkf" Ids="MOqkA29mAJ4QJHCRdxaMCi,CEOtuk6a1VQQDAIbbHELkm" />
+          <Link Id="TG7Jg2U51JKLBALYZ90S59" Ids="CEOtuk6a1VQQDAIbbHELkm,OZ9O7mcZbcfLqkK5DRGOGd" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ IPizza ************************
+
+-->
+      <Node Name="IPizza" Bounds="121,125" Id="Hj62vexkMVMNDgIySq4i5F">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" Name="Interface" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="Ic34DFYFruDQP3hFrFJUTM">
+          <Canvas Id="OhlDeEZsCOlM4aTGXUoiYs" CanvasType="Group">
+            <ControlPoint Id="QDjIsGUXZAhPhA73hF1xbu" Bounds="474,408" />
+          </Canvas>
+          <ProcessDefinition Id="PtWWuLbVnazMi94Xd3sMDy" IsHidden="true">
+            <Fragment Id="J9dWJ37lW5yNl7ppKTqUsQ" Patch="J0ymOMCbPkOLJgPzFjAgCm" Enabled="true" />
+            <Fragment Id="OHkMtc1UhiRMLleOFPUhZG" Patch="LCuEszgOAlhPVo12TMSq4Q" Enabled="true" />
+            <Fragment Id="Dz10jbECxYhOrpMoEGshhH" Patch="FUMrRvZ5stQOQFEkUb8KpC" Enabled="true" />
+            <Fragment Id="BODjr9t3xTxM80AIFJ0Rko" Patch="G7IzcwDrxVOODcjf4NNUlN" Enabled="true" />
+            <Fragment Id="JSUXAtpLlnoPZ8FjdpC0Va" Patch="FL5IpYP7BYbPhaoSyNWRQX" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="J0ymOMCbPkOLJgPzFjAgCm" Name="Prepare" />
+          <Patch Id="LCuEszgOAlhPVo12TMSq4Q" Name="Bake" />
+          <Patch Id="FUMrRvZ5stQOQFEkUb8KpC" Name="Cut" />
+          <Patch Id="G7IzcwDrxVOODcjf4NNUlN" Name="Box" />
+          <Patch Id="FL5IpYP7BYbPhaoSyNWRQX" Name="Render">
+            <Pin Id="SUYWNXkNH9yNkcvvqmGF1s" Name="Layer" Kind="OutputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Layer" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="Mn8dt0KBt85MmmUaJkxgjG" Ids="QDjIsGUXZAhPhA73hF1xbu,SUYWNXkNH9yNkcvvqmGF1s" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PizzaStore ************************
+
+-->
+      <Node Name="PizzaStore" Bounds="121,604" Id="R9iIzT9r6vgN3UMEjoWYdE">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="M5u2WDcwxAjLGsXWfsVwdy">
+          <Canvas Id="ODmbHx6o1UdMiBQ8cPmOpn" CanvasType="Group">
+            <Node Bounds="129,100,85,26" Id="MAMJcaRn6mUPS9JU9AY42z">
+              <p:NodeReference LastCategoryFullName="SimpleFactory.SimplePizzaFactory" LastSymbolSource="callmenames-2019-11-20.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="SimplePizzaFactory" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="R33WPLvsqLMP7S1tBzJgfV" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="MgVrBojPtQ0OMA2XkrqK47" SlotId="BvLmJbEo9rKMHRqxB2Am5p" Bounds="131,167">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="S3W81YAI0KMMbn1vJVZwg4" Bounds="211,176" />
+            <ControlPoint Id="OYayOxNTHfQPOGWHt13pho" Bounds="211,562" />
+            <Node Bounds="117,209,81,19" Id="QJLYRNEkAWzP0FCAv3JUU4">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="O7pN7xVyi1NPSlpjWDzjxq" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Fn5GH5CoE0aNXENFDqyJAg" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="117,240,37,19" Id="L3RZ5sCqhoFPuJS5pd5ehK">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="TZkdxpDu8IHOxt1yonLyOM" Name="Input" Kind="StateInputPin" />
+              <Pin Id="VsdeSc0JU1qOEvDTrZku2Q" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="117,290,155,246" Id="QfNTLSsMGLtPp8zKzD3SOh">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="L3SvQ5SatDuLb9h3Mi88k3" Name="Condition" Kind="InputPin" />
+              <Patch Id="FVGqbUcO7skNxtedUhe9bL" ManuallySortedPins="true">
+                <Patch Id="A3LHLRDCzh9MbNmHqILTtK" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Hgq1QtqyAijOnBsjjBzR7O" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="129,313,85,26" Id="G4jaEIoKxmcNBPpqA7ZAeg">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.SimplePizzaFactory" LastSymbolSource="callmenames-2019-11-20.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="SimplePizzaFactory" />
+                    <Choice Kind="OperationCallFlag" Name="CreatePizza" />
+                  </p:NodeReference>
+                  <Pin Id="GyF80pbgALPNpbhH3xHuEj" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TDvTDllc3u6Ogg0WLSVxqt" Name="Pizza Type" Kind="InputPin" />
+                  <Pin Id="Blvpde0YnVdQL81fw3OX54" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UL5989Z2wPlL3UbVU7sBmn" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="209,353,51,26" Id="ElPXoxBgK4gP6kWNoDwS39">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="SimpleFactory.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Prepare" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="TqyE3nQ3QgjOUJXhxoBNbz" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UhsyRT0lpsIPct7xYnDv7S" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="209,393,38,26" Id="QXyNoOMVEmyLm9TzErnMCi">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="SimpleFactory.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Bake" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="K9BwhgFax0qNi35UbUmvkt" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="RpTeiEER7G2LoUjCrkfUDO" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="209,435,37,26" Id="IcKKhOAj89tPqCDfoLvSDj">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="SimpleFactory.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Box" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Ss1mnYU6FIVOEFC2BHjo0h" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MDpef4DFa2LNAGjjURQecu" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="209,483,37,26" Id="J7LopJHKm7sPPQXpgeTGKO">
+                  <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="SimpleFactory.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Cut" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="NDAVuR9XQQwOvnJ33TiB4W" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OeRICu5bJn5NWJOGFxszmT" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="LHlqbsnPfjYMFQR1nvK6MT" Bounds="211,530" Alignment="Bottom" />
+              <ControlPoint Id="KiHqCZoG9GtOyskoXukGdZ" Bounds="210,297" Alignment="Top" />
+            </Node>
+          </Canvas>
+          <Patch Id="LwnC57DlDV4NTe7ww6EMv0" Name="Create" ParticipatingElements="JmeqPe4xKhqOvvapxmUz6m" />
+          <ProcessDefinition Id="B2sNPZUfZ3oL4QTeb8rF7a" IsHidden="true">
+            <Fragment Id="LjOu519Wk9rNxj7yWVkW0E" Patch="LwnC57DlDV4NTe7ww6EMv0" Enabled="true" />
+            <Fragment Id="LWYDkoRlWa3LnbMrlHF2jV" Patch="RYR4zYQ90jrMwhtN7Cl8HW" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="BvLmJbEo9rKMHRqxB2Am5p" Name="Factory">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="SimplePizzaFactory" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="Sc2FmuqlgU5NMxtt8AA5L7" Ids="MgVrBojPtQ0OMA2XkrqK47,GyF80pbgALPNpbhH3xHuEj" />
+          <Link Id="A2W7kp2ubCQNZcbmiPRlQI" Ids="S3W81YAI0KMMbn1vJVZwg4,TDvTDllc3u6Ogg0WLSVxqt" />
+          <Link Id="GUWHt9Pg0rBQa09Ob7muJ8" Ids="TFDhQZaiC7CQV7Smbm4fGL,S3W81YAI0KMMbn1vJVZwg4" IsHidden="true" />
+          <Patch Id="RYR4zYQ90jrMwhtN7Cl8HW" Name="OrderPizza">
+            <Pin Id="TFDhQZaiC7CQV7Smbm4fGL" Name="Pizza Type" Kind="InputPin" />
+            <Pin Id="BesDlCDUg4mLFhqrYeHTbt" Name="Output" Kind="OutputPin" Bounds="712,805" />
+          </Patch>
+          <Link Id="FtaoE2DxX1xPCSQEgcHhE2" Ids="OYayOxNTHfQPOGWHt13pho,BesDlCDUg4mLFhqrYeHTbt" IsHidden="true" />
+          <Link Id="JmeqPe4xKhqOvvapxmUz6m" Ids="R33WPLvsqLMP7S1tBzJgfV,MgVrBojPtQ0OMA2XkrqK47" />
+          <Link Id="JGbAOTTo428LEdR0NRiNnu" Ids="S3W81YAI0KMMbn1vJVZwg4,O7pN7xVyi1NPSlpjWDzjxq" />
+          <Link Id="L0IesUOQHV8LvfxTNMvII1" Ids="Fn5GH5CoE0aNXENFDqyJAg,TZkdxpDu8IHOxt1yonLyOM" />
+          <Link Id="Aj1ESXPXxj0Mr8UOpjUNFs" Ids="VsdeSc0JU1qOEvDTrZku2Q,L3SvQ5SatDuLb9h3Mi88k3" />
+          <Link Id="JBLVQn0STjyQGHYVdQDKuz" Ids="UL5989Z2wPlL3UbVU7sBmn,TqyE3nQ3QgjOUJXhxoBNbz" />
+          <Link Id="S8fmPvcxT1VOCMnBduIEh2" Ids="UhsyRT0lpsIPct7xYnDv7S,K9BwhgFax0qNi35UbUmvkt" />
+          <Link Id="VkysDKrV5UIPqr4lgfVngX" Ids="RpTeiEER7G2LoUjCrkfUDO,Ss1mnYU6FIVOEFC2BHjo0h" />
+          <Link Id="BxMbVpeajEWLIkb4hivxaA" Ids="MDpef4DFa2LNAGjjURQecu,NDAVuR9XQQwOvnJ33TiB4W" />
+          <Link Id="SG3cjhVUAMSNFo18X9B6li" Ids="KiHqCZoG9GtOyskoXukGdZ,LHlqbsnPfjYMFQR1nvK6MT" IsFeedback="true" />
+          <Link Id="QPL4KDc5IAKOVHJP4Gi3KY" Ids="OeRICu5bJn5NWJOGFxszmT,LHlqbsnPfjYMFQR1nvK6MT" />
+          <Link Id="VLMtpyH2GQXOYqZVPRD0bM" Ids="LHlqbsnPfjYMFQR1nvK6MT,OYayOxNTHfQPOGWHt13pho" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CheesePizza ************************
+
+-->
+      <Node Name="CheesePizza" Bounds="170,169" Id="SIiB8HO7LjBPnYeeRneX69">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="Main" LastSymbolSource="callmenames-2019-11-20.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IPizza" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="TQIxr9X6smhLz0QMzaDyTe">
+          <Canvas Id="IMSuCLLGkEkPjUqwQT0YrL" CanvasType="Group">
+            <Node Bounds="355,380,58,26" Id="RmZRrO9j1Z1OlgUEm6zGFB">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="ABJsolEDOKjNA3Pzkuz1Ed" Name="Value" Kind="InputPin" />
+              <Pin Id="QBgHLkGRm17NupNLZlmBXv" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="U9qgZG3n5sJOW20Mmas5KV" Comment="Value" Bounds="357,349,127,15" ShowValueBox="true" isIOBox="true" Value="Preparing Cheese Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="544,380,58,26" Id="L7I8kSzLPrDP3OAEs4vwog">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="BoFoPu72unbMc8nIV3087R" Name="Value" Kind="InputPin" />
+              <Pin Id="GOiymmUiCZ9LbTy97jC0wM" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="DLPPvFK0FW5PUHeAMaw5IT" Comment="Value" Bounds="546,349,127,15" ShowValueBox="true" isIOBox="true" Value="Baking Cheese Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="355,494,58,26" Id="CZP0jqYf6FcPfO9P5efaow">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="Cwsrr3JarCCPPPEoq1evyt" Name="Value" Kind="InputPin" />
+              <Pin Id="JjZORERAocWLREuwuitl3y" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="HL1RJcZ1AM7NBqjIJKEtfz" Comment="Value" Bounds="357,450,127,15" ShowValueBox="true" isIOBox="true" Value="Cutting Cheese Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="544,494,58,26" Id="Uvk37rfHKriPH6iXvhJeUa">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="H6hqcj2crKWLfY4AWN0HFt" Name="Value" Kind="InputPin" />
+              <Pin Id="NtLRA9jptb8QGD7KEE51W1" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="Bg0AlZfYnqvO8xPfVTRzvP" Comment="Value" Bounds="546,450,127,15" ShowValueBox="true" isIOBox="true" Value="Boxing Cheese Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="437,633" Id="OjYG3NRM5OsPONv5c3E2mv">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Text" />
+              </p:NodeReference>
+              <Pin Id="LXRLiha0znnMq9G62JsZni" Name="Position" Kind="InputPin" />
+              <Pin Id="UjnPYywNWlgPh9RSbvpSDl" Name="Size" Kind="InputPin" />
+              <Pin Id="Nbo1IizmfvmNFtZXs5s9aa" Name="Anchor" Kind="InputPin" />
+              <Pin Id="FHhsI4AuSOHMAiPecmAYUJ" Name="Text" Kind="InputPin" DefaultValue="This is a cheese pizza">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="DnvvkrOHGBrPw4mOso0zXh" Name="Paint" Kind="InputPin" />
+              <Pin Id="Q6UxM5nIcV3LOb1CwFdyWg" Name="Enabled" Kind="InputPin" />
+              <Pin Id="KuEXccU1rAGLrjFCf11rIX" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="UCWeOwY94V6Lx7oE0pSBFc" Bounds="439,678" />
+          </Canvas>
+          <Patch Id="HBUnGZP59iVPMJJCG3OglF" Name="Create" />
+          <ProcessDefinition Id="PXnFqfCB7VIQYt3Lkd0AaX" IsHidden="true">
+            <Fragment Id="GeoPk59dRf4PobY4PXu1hM" Patch="HBUnGZP59iVPMJJCG3OglF" Enabled="true" />
+            <Fragment Id="JkhhcllfTToNmFTedaBBbY" Patch="MR0FXpP6yiAMSFqAnod4oP" Enabled="true" />
+            <Fragment Id="C6fxB1cqhE6PmmvMXd1MJm" Patch="QnhPdlduMGcLcT5TfwzOJa" Enabled="true" />
+            <Fragment Id="VMkF9aFU9yJMEq6ix5PQ7P" Patch="AFUoG81521LNstgOhrRh06" Enabled="true" />
+            <Fragment Id="I4tuc9KEKJLQDU5wxmpPCF" Patch="FN3hWUf3IrBOafzo5EUfwh" Enabled="true" />
+            <Fragment Id="U77pVVOJYNLLeeDFwr4PxQ" Patch="IQwm0DMZ4TzOhMs2tBXfJe" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="MR0FXpP6yiAMSFqAnod4oP" Name="Prepare" ParticipatingElements="RmZRrO9j1Z1OlgUEm6zGFB" />
+          <Link Id="NaS3x09zt6RLKB0waRu6h7" Ids="U9qgZG3n5sJOW20Mmas5KV,ABJsolEDOKjNA3Pzkuz1Ed" />
+          <Patch Id="QnhPdlduMGcLcT5TfwzOJa" Name="Bake" ParticipatingElements="L7I8kSzLPrDP3OAEs4vwog" />
+          <Link Id="IXcBtCQS2OUOebsK690SuK" Ids="DLPPvFK0FW5PUHeAMaw5IT,BoFoPu72unbMc8nIV3087R" />
+          <Patch Id="AFUoG81521LNstgOhrRh06" Name="Cut" ParticipatingElements="CZP0jqYf6FcPfO9P5efaow" />
+          <Link Id="VWNtpkINmBbLzdL1U34bB5" Ids="HL1RJcZ1AM7NBqjIJKEtfz,Cwsrr3JarCCPPPEoq1evyt" />
+          <Patch Id="FN3hWUf3IrBOafzo5EUfwh" Name="Box" ParticipatingElements="Uvk37rfHKriPH6iXvhJeUa" />
+          <Link Id="DEIECn5l1KFNIsr9Tbp9Zh" Ids="Bg0AlZfYnqvO8xPfVTRzvP,H6hqcj2crKWLfY4AWN0HFt" />
+          <Link Id="K5332X0Q1v0ManZo7i7LKQ" Ids="KuEXccU1rAGLrjFCf11rIX,UCWeOwY94V6Lx7oE0pSBFc" />
+          <Patch Id="IQwm0DMZ4TzOhMs2tBXfJe" Name="Render">
+            <Pin Id="QLwwSRsaEcYMWcOVgWt1ej" Name="Layer" Kind="OutputPin" />
+          </Patch>
+          <Link Id="B85LOY9qOS3PW6U81iR2qO" Ids="UCWeOwY94V6Lx7oE0pSBFc,QLwwSRsaEcYMWcOVgWt1ej" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ VeggiePizza ************************
+
+-->
+      <Node Name="VeggiePizza" Bounds="170,211" Id="RVqLtlv2nNlQBYQadrnel1">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="Main" LastSymbolSource="callmenames-2019-11-20.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IPizza" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="PxYxRhYi4y5PprD1umW9JX">
+          <Canvas Id="BKUomFBkArHL9WP4nkRP0g" CanvasType="Group">
+            <Node Bounds="279,290,58,26" Id="QbFmVygkdUXMaCwccPJBlj">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="NQQaC9r7cuDLPDGdwuRkD2" Name="Value" Kind="InputPin" />
+              <Pin Id="NzV8A1pus18No4JytS9gME" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="KLXuDBPcfZJPZwS2syDYXI" Comment="Value" Bounds="281,259,127,15" ShowValueBox="true" isIOBox="true" Value="Preparing Veggie Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="468,290,58,26" Id="Q9r8kIEiW86QCeMLBsY6Vm">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="HXSxOasTNyPPrmygC50DsA" Name="Value" Kind="InputPin" />
+              <Pin Id="EmyJMeshB9MMSt58fSYRG7" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="D56IOiPk524Pkspqa5JsIs" Comment="Value" Bounds="470,259,127,15" ShowValueBox="true" isIOBox="true" Value="Baking Veggie Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="279,404,58,26" Id="ICqF7qjvmxfLzCfBsnMHfB">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="Su0aIeeA5NXNEor29EvYWh" Name="Value" Kind="InputPin" />
+              <Pin Id="BBNXIWJsl85OeabsANwO9J" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="OqwgftZPWbnN15LyQiYTnY" Comment="Value" Bounds="281,360,127,15" ShowValueBox="true" isIOBox="true" Value="Cutting Veggie Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="468,404,58,26" Id="PdZ5g7LOUS2N8UWvUQdEUp">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="EAQPxUyf69qMUosQjN6Jlz" Name="Value" Kind="InputPin" />
+              <Pin Id="LOUsuI4f6miMMFeZ84Vt9n" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="SsacC4UED0LN7NByQee13X" Comment="Value" Bounds="470,360,127,15" ShowValueBox="true" isIOBox="true" Value="Boxing Veggie Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="390,523" Id="QgXmMnTaYN8L3Frpd0zdH2">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Text" />
+              </p:NodeReference>
+              <Pin Id="UzLSeddxS9MP2KYUrN38YU" Name="Position" Kind="InputPin" />
+              <Pin Id="VXzK0vcUfzrP9ILSaUuu2g" Name="Size" Kind="InputPin" />
+              <Pin Id="TJzmsZ7wWxENmnkqIs6il0" Name="Anchor" Kind="InputPin" />
+              <Pin Id="Jezt2JYnCEbMgyQbKKUyW5" Name="Text" Kind="InputPin" DefaultValue="This is a veggie pizza">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="SScoHFdnVqNOcoTKIp78zq" Name="Paint" Kind="InputPin" />
+              <Pin Id="NuVk7Kd3lAjMtvqNnx4lGB" Name="Enabled" Kind="InputPin" />
+              <Pin Id="Tvziq4cTPSNMvJPDLFo7VK" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="BTfd12KrhKNLdZliBBmII1" Bounds="392,568" />
+          </Canvas>
+          <Patch Id="LtPj3HoLVzWOBxAmcyHXI6" Name="Create" />
+          <ProcessDefinition Id="AQzSGIj60KxPsFVov8w3Kv" IsHidden="true">
+            <Fragment Id="DsygNkW54AMLGMFEnZkmtK" Patch="LtPj3HoLVzWOBxAmcyHXI6" Enabled="true" />
+            <Fragment Id="HH3mAiQLsqJPGYVYsdNDzZ" Patch="UxdROSDH4LNMIE1NfNAmii" Enabled="true" />
+            <Fragment Id="TtAWdNJ6vAnLhi5toJJE5H" Patch="CtSLP8foGsQPsRHr2izw8T" Enabled="true" />
+            <Fragment Id="E9mBdt4uKciMYRb5FPtVrG" Patch="DXD9PIBZNrnLOGHDUWM5F8" Enabled="true" />
+            <Fragment Id="GNtIWXtqEIvOw6ediowc8b" Patch="Ls8vhK9frZzLqbo9ltDaWp" Enabled="true" />
+            <Fragment Id="J3waeCl8OFqMTUbSXovDLk" Patch="D8SgEHctzEPP00rUxV58Oy" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="UxdROSDH4LNMIE1NfNAmii" Name="Prepare" ParticipatingElements="QbFmVygkdUXMaCwccPJBlj" />
+          <Patch Id="CtSLP8foGsQPsRHr2izw8T" Name="Bake" ParticipatingElements="Q9r8kIEiW86QCeMLBsY6Vm" />
+          <Patch Id="DXD9PIBZNrnLOGHDUWM5F8" Name="Cut" ParticipatingElements="ICqF7qjvmxfLzCfBsnMHfB" />
+          <Patch Id="Ls8vhK9frZzLqbo9ltDaWp" Name="Box" ParticipatingElements="PdZ5g7LOUS2N8UWvUQdEUp" />
+          <Link Id="D53hDFJWtQuQLK3zwyvfQ7" Ids="KLXuDBPcfZJPZwS2syDYXI,NQQaC9r7cuDLPDGdwuRkD2" />
+          <Link Id="S6ljLof3HjyM4kSTBqCmGW" Ids="D56IOiPk524Pkspqa5JsIs,HXSxOasTNyPPrmygC50DsA" />
+          <Link Id="NeZFWBuRcXPP5yvukqsiER" Ids="OqwgftZPWbnN15LyQiYTnY,Su0aIeeA5NXNEor29EvYWh" />
+          <Link Id="DEKyN9cZfNRO78wTw43JO2" Ids="SsacC4UED0LN7NByQee13X,EAQPxUyf69qMUosQjN6Jlz" />
+          <Patch Id="D8SgEHctzEPP00rUxV58Oy" Name="Render">
+            <Pin Id="MtorT3VwbGwP9nQsH82C6t" MergeId="189684" Name="Layer" Kind="OutputPin" />
+          </Patch>
+          <Link Id="VV8OhpSjvmuLcbyHUoNkP7" Ids="Tvziq4cTPSNMvJPDLFo7VK,BTfd12KrhKNLdZliBBmII1" />
+          <Link Id="RXcyyrWNScYOouPklRcRy6" Ids="BTfd12KrhKNLdZliBBmII1,MtorT3VwbGwP9nQsH82C6t" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ClamPizza ************************
+
+-->
+      <Node Name="ClamPizza" Bounds="170,253" Id="C6ycy362oEdPOmIDzhhTMd">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="Main" LastSymbolSource="callmenames-2019-11-20.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IPizza" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="FCePwrkewlnMGSYmkcLP8s">
+          <Canvas Id="Bnkisu5g58ENSi9FL2amMg" CanvasType="Group">
+            <Node Bounds="388,387,58,26" Id="NU0dlMv30YrMlcE8CRkTf5">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="L7bmDEwph9LMOQPc2oBdTv" Name="Value" Kind="InputPin" />
+              <Pin Id="Q4IKDkcZlapMMIQy1JK5wX" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="DN13IpS5uLzNByzwGGgVB9" Comment="Value" Bounds="390,356,127,15" ShowValueBox="true" isIOBox="true" Value="Preparing Clam Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="577,387,58,26" Id="BLVrbrc98jeMSHcLeezyIy">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="EG1FdHw5dgCP5LMkv2KOEi" Name="Value" Kind="InputPin" />
+              <Pin Id="EJflu1Qi2EhLWlF1VXf9up" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="A9ZENrwk8GeOAnlcRyhkD1" Comment="Value" Bounds="579,356,127,15" ShowValueBox="true" isIOBox="true" Value="Baking Clam Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="388,501,58,26" Id="LdpASBDE3pUO7HpyuvYhHT">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="APN25F4L04jMxDfUSggzHT" Name="Value" Kind="InputPin" />
+              <Pin Id="CWaxI91ZyQwOGro1L9fbp6" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="AXtwMNNK2KrNZtdOYQt2Vh" Comment="Value" Bounds="390,457,127,15" ShowValueBox="true" isIOBox="true" Value="Cutting Clam Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="577,501,58,26" Id="QlfFLyhDj0yOyy4KU2bFE3">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="QUwCet5wzjZNPa5dIIKMcZ" Name="Value" Kind="InputPin" />
+              <Pin Id="HQ7uODS9LDHMvRZHkXWZOk" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="FkekctHvLHZMo5tJD4Req3" Comment="Value" Bounds="579,457,127,15" ShowValueBox="true" isIOBox="true" Value="Boxing Clam Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="507,609" Id="FH4DEVkWBHjQIY0Bl8vsT0">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Text" />
+              </p:NodeReference>
+              <Pin Id="IYSaSQNDhKiM8j9N2awAFu" Name="Position" Kind="InputPin" />
+              <Pin Id="SnoJvwMrUV0N7289nisaFv" Name="Size" Kind="InputPin" />
+              <Pin Id="Rh5f9VnL76RPjIVtVjCqZP" Name="Anchor" Kind="InputPin" />
+              <Pin Id="Rb5bcgUfS6pOBpm5GywnAw" Name="Text" Kind="InputPin" DefaultValue="This is a clam pizza">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="PqFYUYZo0I0OSytOgZyS8q" Name="Paint" Kind="InputPin" />
+              <Pin Id="KeLVITHwz3fOo1Kazd33qy" Name="Enabled" Kind="InputPin" />
+              <Pin Id="OvN2nsT4GrVLnxNJfCK564" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="M5v0UU8lk0JPEcsoiIItRz" Bounds="509,654" />
+          </Canvas>
+          <Patch Id="AKx20xTvmVCPS7iItRuxEU" Name="Create" />
+          <ProcessDefinition Id="LkOwwdtlEZjNNB2iWO7f2V" IsHidden="true">
+            <Fragment Id="RmxdqnzuhMBMGzcRxAA2Ru" Patch="AKx20xTvmVCPS7iItRuxEU" Enabled="true" />
+            <Fragment Id="KxyJVo7MkftLZ5ERj3YbLM" Patch="SZqhu4BLE74PzHmpoyCA2v" Enabled="true" />
+            <Fragment Id="AkMFikApnKFL3HaLy3txE4" Patch="RdkmtCjgjGSPgvoaKaD3Ou" Enabled="true" />
+            <Fragment Id="Rklad8OACGmLRbkkQJhymR" Patch="FltMoAo6wYBLSpC0BDF9RK" Enabled="true" />
+            <Fragment Id="GovYnJyH2tCQTLHG6MreDL" Patch="C2s6MUChHngOqfulTTX2Qy" Enabled="true" />
+            <Fragment Id="RVh3zEQ1zqwMFTsvAQH8E7" Patch="Ky4dRwDkblcP1JQ0LDPAM6" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="SZqhu4BLE74PzHmpoyCA2v" Name="Prepare" ParticipatingElements="NU0dlMv30YrMlcE8CRkTf5" />
+          <Patch Id="RdkmtCjgjGSPgvoaKaD3Ou" Name="Bake" ParticipatingElements="BLVrbrc98jeMSHcLeezyIy" />
+          <Patch Id="FltMoAo6wYBLSpC0BDF9RK" Name="Cut" ParticipatingElements="LdpASBDE3pUO7HpyuvYhHT" />
+          <Patch Id="C2s6MUChHngOqfulTTX2Qy" Name="Box" ParticipatingElements="QlfFLyhDj0yOyy4KU2bFE3" />
+          <Link Id="Pckn2G4X5mlPoJUoPF5S6X" Ids="DN13IpS5uLzNByzwGGgVB9,L7bmDEwph9LMOQPc2oBdTv" />
+          <Link Id="DSlcMqJNZ5mMUi9uRKjdao" Ids="A9ZENrwk8GeOAnlcRyhkD1,EG1FdHw5dgCP5LMkv2KOEi" />
+          <Link Id="C8CRfsQ0sayLMmVQkpMZdx" Ids="AXtwMNNK2KrNZtdOYQt2Vh,APN25F4L04jMxDfUSggzHT" />
+          <Link Id="ObCJMO0IPmXPbcj7nH06l0" Ids="FkekctHvLHZMo5tJD4Req3,QUwCet5wzjZNPa5dIIKMcZ" />
+          <Patch Id="Ky4dRwDkblcP1JQ0LDPAM6" Name="Render">
+            <Pin Id="Ui85RlE1ts4Lar75qdycv3" MergeId="189684" Name="Layer" Kind="OutputPin" />
+          </Patch>
+          <Link Id="VedOsFW1VooMllMRQfTHa1" Ids="OvN2nsT4GrVLnxNJfCK564,M5v0UU8lk0JPEcsoiIItRz" />
+          <Link Id="J9gjA1xzKgDLdhNXreuQ74" Ids="M5v0UU8lk0JPEcsoiIItRz,Ui85RlE1ts4Lar75qdycv3" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PepperoniPizza ************************
+
+-->
+      <Node Name="PepperoniPizza" Bounds="170,295" Id="Sv36LfVFrGlNnsOjkdGjGV">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="Main" LastSymbolSource="callmenames-2019-11-20.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IPizza" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="DfSnMvXU4QSQZ15PD8ZvhQ">
+          <Canvas Id="Gp0T1eOZI6FO2sOxap6rCw" CanvasType="Group">
+            <Node Bounds="359,380,58,26" Id="AEEpQNGtdYuQDBXBizcncb">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="PKY1jbesGPrLHC6zZoVIiH" Name="Value" Kind="InputPin" />
+              <Pin Id="SF6K8RXGLQiPdLOGDYvsfW" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="NTQTTbZn5I1PZJCaFNCGIu" Comment="Value" Bounds="361,349,127,15" ShowValueBox="true" isIOBox="true" Value="Preparing Pepperoni Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="548,380,58,26" Id="FAqFRYQfNeCNuI7nEFRuS3">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="SeXq60Zyi80Olytuj6FbwT" Name="Value" Kind="InputPin" />
+              <Pin Id="F1bmNazPzDQPIZ1oaI2hFG" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="ILj3fy5pFgtQXZiBlXqfai" Comment="Value" Bounds="550,349,127,15" ShowValueBox="true" isIOBox="true" Value="Baking Pepperoni Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="359,494,58,26" Id="BFsTwgHU7Y2LKr62aBKuwX">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="LEF953FgVPlL5Cuo5W1RgM" Name="Value" Kind="InputPin" />
+              <Pin Id="FZyAvD6PkuFOQyNwfYcm5Q" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="UvoTdZKHANWK927Lapth7G" Comment="Value" Bounds="361,450,127,15" ShowValueBox="true" isIOBox="true" Value="Cutting Pepperoni Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="548,494,58,26" Id="GZjBRy8oJ2UOEhC8VENnAp">
+              <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="WriteLine" />
+              </p:NodeReference>
+              <Pin Id="JRuONITdCPcLbWy9gWGjCv" Name="Value" Kind="InputPin" />
+              <Pin Id="AVl2ZhIXK2rNSjRlXftJUD" Name="Apply" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="N9L12X5N3RFNfL0w2VXUUm" Comment="Value" Bounds="550,450,127,15" ShowValueBox="true" isIOBox="true" Value="Boxing Pepperoni Pizza">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="479,621" Id="EiBv5dh6WrsNBUSw5Z3kfs">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Text" />
+              </p:NodeReference>
+              <Pin Id="RPIduJFL8WwNhLLJRpqfI6" Name="Position" Kind="InputPin" />
+              <Pin Id="IGG9iO77lv0Lor584Pkqgf" Name="Size" Kind="InputPin" />
+              <Pin Id="B4qO6oFAoT9LZhbGSN07CO" Name="Anchor" Kind="InputPin" />
+              <Pin Id="R95sOh8PvMDPVy7kS75tJq" Name="Text" Kind="InputPin" DefaultValue="This is a pepperoni pizza">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="Hzkv8HBrfvTPfmCVufq6Kz" Name="Paint" Kind="InputPin" />
+              <Pin Id="TpwiQNs31QmP3iG9KAkUzK" Name="Enabled" Kind="InputPin" />
+              <Pin Id="MlEjtJTfvLEN99CAb4ld0Y" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="IC1xstna1gxObLGMgH2Jji" Bounds="481,666" />
+          </Canvas>
+          <Patch Id="M4ha6SsaWDFQBMT8cg8vgi" Name="Create" />
+          <ProcessDefinition Id="BMI3IDnaVRSPI3bGDbelmu" IsHidden="true">
+            <Fragment Id="Kq8Zis78KTxLAdgJVkjWYv" Patch="M4ha6SsaWDFQBMT8cg8vgi" Enabled="true" />
+            <Fragment Id="GkmCpNwHAoxPfjGmFqkJO9" Patch="FauVH2vZ9fiMR1S9TZJl1E" Enabled="true" />
+            <Fragment Id="NFt97BQLDrPNTezTC6IJ9w" Patch="ON4NJ4geFmyLFSxRWLbtgf" Enabled="true" />
+            <Fragment Id="VgSZXzwPYvZNnhENelJWMt" Patch="BLytreBqIUIQcGpdA8sw4s" Enabled="true" />
+            <Fragment Id="MFtqeRiCN8WO20xzuNSwN2" Patch="FWGQ9VpMfYkQW961Ivvz2d" Enabled="true" />
+            <Fragment Id="FRTvC3svUKhLgt6MFRErwU" Patch="KrDr0Gx6uz9QLXhIHbUD7q" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="FauVH2vZ9fiMR1S9TZJl1E" Name="Prepare" ParticipatingElements="AEEpQNGtdYuQDBXBizcncb" />
+          <Patch Id="ON4NJ4geFmyLFSxRWLbtgf" Name="Bake" ParticipatingElements="FAqFRYQfNeCNuI7nEFRuS3" />
+          <Patch Id="BLytreBqIUIQcGpdA8sw4s" Name="Cut" ParticipatingElements="BFsTwgHU7Y2LKr62aBKuwX" />
+          <Patch Id="FWGQ9VpMfYkQW961Ivvz2d" Name="Box" ParticipatingElements="GZjBRy8oJ2UOEhC8VENnAp" />
+          <Link Id="LlGiW5Kc0NuMNXsBl3xoMM" Ids="NTQTTbZn5I1PZJCaFNCGIu,PKY1jbesGPrLHC6zZoVIiH" />
+          <Link Id="LhQTQQCdyoUNrW668yjBOH" Ids="ILj3fy5pFgtQXZiBlXqfai,SeXq60Zyi80Olytuj6FbwT" />
+          <Link Id="T0WA5PGzPYbMiVVvUsPWe2" Ids="UvoTdZKHANWK927Lapth7G,LEF953FgVPlL5Cuo5W1RgM" />
+          <Link Id="HUagPyG1bjwP9FeKMuCE3I" Ids="N9L12X5N3RFNfL0w2VXUUm,JRuONITdCPcLbWy9gWGjCv" />
+          <Patch Id="KrDr0Gx6uz9QLXhIHbUD7q" Name="Render">
+            <Pin Id="JvMmsJNBhEpNObMeoE0Y05" MergeId="189684" Name="Layer" Kind="OutputPin" />
+          </Patch>
+          <Link Id="CYZZa3Jx0iTMWwh9AKpIjh" Ids="MlEjtJTfvLEN99CAb4ld0Y,IC1xstna1gxObLGMgH2Jji" />
+          <Link Id="F6Kls69rCrkLShPnyD50Ne" Ids="IC1xstna1gxObLGMgH2Jji,JvMmsJNBhEpNObMeoE0Y05" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ IPizzaStore ************************
+
+-->
+      <Node Name="IPizzaStore" Bounds="121,388" Id="Bqv35nyEfcpLDrWlSAOOtb">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" Name="Interface" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="VGRcbVUsQY0OQeHbxJtqEq">
+          <Canvas Id="Q8akzD8x7HPLYBLkwrpwE3" CanvasType="Group">
+            <ControlPoint Id="AytLRk0dyUVLhgWJIm1iIQ" Bounds="489,239" />
+            <ControlPoint Id="L8ZDt4Fr0f8PDw3I0rpLf1" Bounds="489,287" />
+            <Overlay Id="TSuCpt2vqIhLyRMjFSBsCY" Name="Abstract CreatePizza" Bounds="455,188,226,125">
+              <p:ColorIndex p:Type="Int32">3</p:ColorIndex>
+            </Overlay>
+            <ControlPoint Id="C6SYxCaFvdQPOHlujR5L8a" Bounds="266,138" />
+            <Node Bounds="264,260,38,26" Id="OWICCYkY5q2MvFKGzEDkab">
+              <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" />
+                <Choice Kind="OperationCallFlag" Name="Bake" />
+              </p:NodeReference>
+              <Pin Id="H9kRIAG8VMLQZn1hCntyo8" Name="Input" Kind="StateInputPin" />
+              <Pin Id="CvqLsqC6gFFLDdW9lNmUdd" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="264,341,37,26" Id="ANRXv83WphrNWVtgfl4ao4">
+              <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Cut" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="DCg998zNdojN7GAGuNwVG0" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DK8Qxu4ueuULR6nrUEmYWz" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="264,217,51,26" Id="KLnvJS9ZpElQZullXteagH">
+              <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Prepare" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="QtIfFcCjoqtN1t18IMsG6w" Name="Input" Kind="StateInputPin" />
+              <Pin Id="VT3C1wY3YHvPnO9BVuuNhH" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="264,300,37,26" Id="C5BxGhlhHdCLgxgPA1fcqy">
+              <p:NodeReference LastCategoryFullName="SimpleFactory.IPizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Box" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IPizza" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="NHrHGJNVLpkMA27w7iwAAD" Name="Input" Kind="StateInputPin" />
+              <Pin Id="S07LR2yaIw9OvNYOYtLP2n" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="THdirYpWaZ5PViaC34BFUI" Bounds="266,396" />
+            <Node Bounds="199,171,70,26" Id="QMpglcUjPt6N0S3buG1sda">
+              <p:NodeReference LastCategoryFullName="SimpleFactory.IPizzaStore" LastSymbolSource="02_PizzaStoreFramework.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CreatePizza" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IPizzaStore" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="KnnMGLcLIrxOu238dUBs2F" Name="Input" Kind="StateInputPin" />
+              <Pin Id="UJLGaElhMHhL9VZV8G2qAR" Name="Pizza Type" Kind="InputPin" />
+              <Pin Id="PYhzFJbTZyIOUrJFAQ8Op7" Name="State Output" Kind="StateOutputPin" />
+              <Pin Id="HcCnHjq8fVOOd4NddCQOux" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="FqJ6sHmbkhXMACWQqC7FqL" Bounds="201,138" />
+            <Pad Id="Rdq9K2XfPBQOm7q0yAYg7l" Bounds="55,180,132,19" ShowValueBox="true" isIOBox="true" Value="this.CreatePizza &gt;&gt;">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Overlay Id="HPGtz7IlC1qLj0mXWEsCFQ" Name="OrderPizza" Bounds="41,71,347,354" />
+            <Pad Id="GhKrqNbGCidLXjqVYnojOD" Bounds="448,345,247,177" ShowValueBox="true" isIOBox="true" Value="What varries among the regional PizzaStores is the style of the Pizzas they make. New York has thin crust, Chicago has thick, etc. We're going to push all these variations in the CreatePizza method. Still, all PizzaStores will inherit the same OrderPizza method, which ensures all stores prepare pizzas the same way.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="Mu4RMWuZecuNid5FhFtMrO" IsHidden="true">
+            <Fragment Id="K6rYCt7ck1rNt4Xb54G29W" Patch="PVHr4A4IHOKLUtkgx86EYs" Enabled="true" />
+            <Fragment Id="I5CoUeAubY5NCC76udjESS" Patch="Jq3xxlCLOAiMhxOPX6e8WZ" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="Jq3xxlCLOAiMhxOPX6e8WZ" Name="OrderPizza">
+            <Pin Id="LCeIytIhiq4NSzjbNVlctf" Name="Pizza Type" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PPPdyQxnkklNX3qSDyqvWM" Name="Input" Kind="InputPin" Bounds="190,242">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="IPizzaStore" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="VV2nQdlti9yOp6cWCn2Akd" Name="Output" Kind="OutputPin" Bounds="261,515" />
+          </Patch>
+          <Patch Id="PVHr4A4IHOKLUtkgx86EYs" Name="CreatePizza">
+            <Pin Id="AjondsAeTr6Lp3SB1PQSR2" Name="Pizza Type" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OFqaH88vJXCP1lBEqoOKW0" Name="Output" Kind="OutputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="IPizza" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="NLNrdg64vcrLdkuQYIYoMW" Ids="AjondsAeTr6Lp3SB1PQSR2,AytLRk0dyUVLhgWJIm1iIQ" IsHidden="true" />
+          <Link Id="SCGZipZKvOJNw2Ry4idorI" Ids="L8ZDt4Fr0f8PDw3I0rpLf1,OFqaH88vJXCP1lBEqoOKW0" IsHidden="true" />
+          <Link Id="LCEWIVKMiIvOaUFooLKjwb" Ids="LCeIytIhiq4NSzjbNVlctf,C6SYxCaFvdQPOHlujR5L8a" IsHidden="true" />
+          <Link Id="L8q5jH9cS0dLYEZ2Qs8MUs" Ids="CvqLsqC6gFFLDdW9lNmUdd,NHrHGJNVLpkMA27w7iwAAD" />
+          <Link Id="QwkRbnjb5sBLa4g4x1MYo1" Ids="VT3C1wY3YHvPnO9BVuuNhH,H9kRIAG8VMLQZn1hCntyo8" />
+          <Link Id="KIBnBesSknbP6XaMJSPXvf" Ids="S07LR2yaIw9OvNYOYtLP2n,DCg998zNdojN7GAGuNwVG0" />
+          <Link Id="MG2VXpHdRu9O5hX7zb5nCY" Ids="DK8Qxu4ueuULR6nrUEmYWz,THdirYpWaZ5PViaC34BFUI" />
+          <Link Id="T1SMnccBJZbOSAzEi24nWv" Ids="THdirYpWaZ5PViaC34BFUI,VV2nQdlti9yOp6cWCn2Akd" IsHidden="true" />
+          <Link Id="PFx22NPaiPcLU4JXPPNsw9" Ids="C6SYxCaFvdQPOHlujR5L8a,UJLGaElhMHhL9VZV8G2qAR" />
+          <Link Id="SaVDvLxl1PKLOP5MFDEZWs" Ids="HcCnHjq8fVOOd4NddCQOux,QtIfFcCjoqtN1t18IMsG6w" />
+          <Link Id="IOxVqjBFhudLGvt5cs6Lq2" Ids="FqJ6sHmbkhXMACWQqC7FqL,KnnMGLcLIrxOu238dUBs2F" />
+          <Link Id="VcUk6peWQrKNz2q2nzcWFO" Ids="PPPdyQxnkklNX3qSDyqvWM,FqJ6sHmbkhXMACWQqC7FqL" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ NYPizzaStore ************************
+
+-->
+      <Node Name="NYPizzaStore" Bounds="173,436" Id="Lp5YvmnP5SXLoFzlt8fV5N">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="PizzaStoreFramework" LastSymbolSource="02_PizzaStoreFramework.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IPizzaStore" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="ErklEuipb6xPlcmnAYDEBC">
+          <Canvas Id="GtIS2rKR8tyLpYSLgkuAFS" CanvasType="Group">
+            <ControlPoint Id="DBLPQX95oMSQV4Oh5mOjIq" Bounds="617,449" />
+            <Pad Id="KnjnZWWnp3rOaiiEldirLK" Comment="Pizza Type 1" Bounds="722,411,62,15" ShowValueBox="true" isIOBox="true" Value="cheese">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="EN48ftbGRWPLtVEbTaU4KH" Comment="Pizza Type 2" Bounds="780,439,82,15" ShowValueBox="true" isIOBox="true" Value="veggie">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="BEyHwC3aDmhOuvFM9sW9Z4" Comment="Pizza Type 3" Bounds="839,463,35,15" ShowValueBox="true" isIOBox="true" Value="clam">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Oi3V6Z35rhcLrsFiAfnqvP" Comment="Pizza Type 4" Bounds="898,481,74,15" ShowValueBox="true" isIOBox="true" Value="pepperoni">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="661,507,299,86" Id="StyJlUkHO01PNJzLbb5FzH">
+              <p:NodeReference LastCategoryFullName="PizzaStoreFramework.Utils" LastSymbolSource="02_PizzaStoreFramework.vl">
+                <Choice Kind="ProcessAppFlag" Name="PizzaCreator" />
+                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="HhyPH6JxRg4MYMkAPmUCWx" Name="Input" Kind="InputPin" />
+              <Pin Id="B0ZWgr75c7DOIUEt7d94vN" Name="Pizza Type 1" Kind="InputPin" />
+              <Pin Id="JR0aNKSVimPOYPRzNDXzw8" Name="Pizza Type 2" Kind="InputPin" />
+              <Pin Id="H88xZkAgRb6OTZS8d9yK2t" Name="Pizza Type 3" Kind="InputPin" />
+              <Pin Id="OXVc9zezcbgOrjAlmtY9ZX" Name="Pizza Type 4" Kind="InputPin" />
+              <Pin Id="NMOre2tQOB9MPOiNJ1ytPo" Name="Force" Kind="InputPin" />
+              <Pin Id="GajtgQ9hNsiLjnWuqVa5ib" Name="Result" Kind="OutputPin" />
+              <Patch Id="BDK83PvvUjfO2XWrbW2aVS" Name="Pizza 1 Creation" ManuallySortedPins="true">
+                <Pin Id="LVi2b0tqSVwMhqV5mHLiHK" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="K52lcVsfYd8NuCVBVNmWQQ" Bounds="675,586" />
+                <Node Bounds="673,530,61,26" Id="ED9fwFrtvehMHUaxPlVJvj">
+                  <p:NodeReference LastCategoryFullName="PizzaStoreFramework.CheesePizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="CheesePizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="AOYdpyEIgiSMVyfLtSSVB3" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <Patch Id="OOtfXnDN1y0LyKyDVATt4Z" Name="Pizza 2 Creation" ManuallySortedPins="true">
+                <Pin Id="IOMMhTE3ILQLm9ZMjWHiri" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="Nj4qamgnmuALO7CUFEpYp1" Bounds="748,586" />
+                <Node Bounds="746,530,59,26" Id="T88YcyatHdxMUdAceWM9xS">
+                  <p:NodeReference LastCategoryFullName="PizzaStoreFramework.VeggiePizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="VeggiePizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="MqyMo4YtwvKQRWCd7KAc5l" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <Patch Id="U6CIUba8Vv0LdrH2hNADsA" Name="Pizza 3 Creation" ManuallySortedPins="true">
+                <Pin Id="GMZPgBmKvM3QYTyZ8lrT2v" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="KbBvS5RpscqMGviDZCN7nD" Bounds="819,586" />
+                <Node Bounds="817,530,53,26" Id="VUyuE8H67h9O5ua2xGvnIF">
+                  <p:NodeReference LastCategoryFullName="PizzaStoreFramework.ClamPizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="ClamPizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="ElJQA8zznXAMJkiXt3xcLY" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <Patch Id="CTkXZz5ijcRPO7hnZ5TZOy" Name="Pizza 4 Creation" ManuallySortedPins="true">
+                <Pin Id="Pnjb1jahFydLi0PRXJegUD" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="FCAsW26KhLMQIHKkZd2Kvq" Bounds="879,586" />
+                <Node Bounds="877,530,71,26" Id="HI9XTfMKuTrMI8axbIqlVx">
+                  <p:NodeReference LastCategoryFullName="PizzaStoreFramework.PepperoniPizza" LastSymbolSource="02_PizzaStoreFramework.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="PepperoniPizza" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="C9PtsNchNOTNZKU7D4baol" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="RgKakhhbkPBLPUPTmM9tgc" Bounds="663,635" />
+          </Canvas>
+          <Patch Id="RTJQi9Cp3n6MPhu1blu8Cp" Name="Create" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="PpEUoSeOsJ4N3kR498CWtn" IsHidden="true">
+            <Fragment Id="RGwRZlKv2hsOyizasUUHC1" Patch="RTJQi9Cp3n6MPhu1blu8Cp" Enabled="true" />
+            <Fragment Id="MdKDrMv7oPtP5y5hY7ZaQ6" Patch="LBoQjmtJzIAQTQyrjRjpIq" Enabled="true" />
+            <Fragment Id="O8nMSFS37EcLAyvBDi6OcT" Patch="GVgaHD39BaIMpOVDVicDeT" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="LBoQjmtJzIAQTQyrjRjpIq" Name="OrderPizza">
+            <Pin Id="IxIDx5MLXMCNHSu51jwvlQ" Name="Input" Kind="InputPin" />
+            <Pin Id="UNtKzWnBgmmQFLA5pCZwzQ" Name="Pizza Type" Kind="InputPin" />
+            <Pin Id="RGBm3t3cn99PSHmWyicvax" Name="Output" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="GVgaHD39BaIMpOVDVicDeT" Name="CreatePizza">
+            <Pin Id="VNmZYxaCiw0QJBVb5kecBM" Name="Pizza Type" Kind="InputPin" />
+            <Pin Id="Uhptbb9jGGrOnGW76nTcrX" Name="Output" Kind="OutputPin" />
+          </Patch>
+          <Link Id="IZ0lfe8iAx0MnfWUcTzqRb" Ids="VNmZYxaCiw0QJBVb5kecBM,DBLPQX95oMSQV4Oh5mOjIq" IsHidden="true" />
+          <Link Id="A7tYAhKb7PPNZvwBEboWR4" Ids="K52lcVsfYd8NuCVBVNmWQQ,LVi2b0tqSVwMhqV5mHLiHK" IsHidden="true" />
+          <Link Id="PIYrbjrK5hpN8eeM0lHcuE" Ids="Nj4qamgnmuALO7CUFEpYp1,IOMMhTE3ILQLm9ZMjWHiri" IsHidden="true" />
+          <Link Id="BDCJO3TK9qrLHoLBG2ntkX" Ids="KbBvS5RpscqMGviDZCN7nD,GMZPgBmKvM3QYTyZ8lrT2v" IsHidden="true" />
+          <Link Id="HktgW0SIpwgPzRc3bYWR7F" Ids="FCAsW26KhLMQIHKkZd2Kvq,Pnjb1jahFydLi0PRXJegUD" IsHidden="true" />
+          <Link Id="GxAQe7emvPhOzEMrAJ6x0B" Ids="DBLPQX95oMSQV4Oh5mOjIq,HhyPH6JxRg4MYMkAPmUCWx" />
+          <Link Id="Cn1cBSvyD1KMGpvsqqY3m6" Ids="KnjnZWWnp3rOaiiEldirLK,B0ZWgr75c7DOIUEt7d94vN" />
+          <Link Id="G9XVMr8hcELMhwbG8lY4G4" Ids="EN48ftbGRWPLtVEbTaU4KH,JR0aNKSVimPOYPRzNDXzw8" />
+          <Link Id="HhtbBVeluoOMS4j6hSJnSy" Ids="BEyHwC3aDmhOuvFM9sW9Z4,H88xZkAgRb6OTZS8d9yK2t" />
+          <Link Id="JCBlVqv5XFVPQ36REiIo9i" Ids="Oi3V6Z35rhcLrsFiAfnqvP,OXVc9zezcbgOrjAlmtY9ZX" />
+          <Link Id="U4j9vPyR3OMMQRbZmhRoxO" Ids="AOYdpyEIgiSMVyfLtSSVB3,K52lcVsfYd8NuCVBVNmWQQ" />
+          <Link Id="LuvTRj4MoltOCYrldGeZEn" Ids="MqyMo4YtwvKQRWCd7KAc5l,Nj4qamgnmuALO7CUFEpYp1" />
+          <Link Id="CZ2veFQVEztOW2nlUrITOE" Ids="ElJQA8zznXAMJkiXt3xcLY,KbBvS5RpscqMGviDZCN7nD" />
+          <Link Id="J4NYwqdMrBwMBUMBpVSA0N" Ids="C9PtsNchNOTNZKU7D4baol,FCAsW26KhLMQIHKkZd2Kvq" />
+          <Link Id="DgY1BeqnRjjMAIHPUzNhcY" Ids="GajtgQ9hNsiLjnWuqVa5ib,RgKakhhbkPBLPUPTmM9tgc" />
+          <Link Id="UTSMiD1YLWVPczFvrALCZk" Ids="RgKakhhbkPBLPUPTmM9tgc,Uhptbb9jGGrOnGW76nTcrX" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Canvas Id="JlgLVJ5Z1lbQX7IbcDnKlg" Name="Utils" Position="378,513">
+        <!--
+
+    ************************ PizzaCreator ************************
+
+-->
+        <Node Name="PizzaCreator" Bounds="378,373" Id="NE7PWYJ8tgoPEDogUern09">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <Choice Kind="ContainerDefinition" Name="Process" />
+          </p:NodeReference>
+          <Patch Id="CsbkvzlRNkyLhFgeHV6fwM">
+            <Canvas Id="DnFMWJqo88MNFG8HbieDyM" CanvasType="Group">
+              <ControlPoint Id="T60O9GdQmotQBeUeQcHF6o" Bounds="372,371" />
+              <ControlPoint Id="EUWiR5d7DQ9Piwruq3Pa61" Bounds="487,371" />
+              <ControlPoint Id="DnDREvQoCszNvL2LuutSAd" Bounds="602,371" />
+              <ControlPoint Id="EGYWtk8mDMKMoEP4GuWSRS" Bounds="305,474" />
+              <Node Bounds="370,419,45,19" Id="CMJCatn6kd3Leaellq90VV">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Cons" />
+                  <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="L0dKwTEZFyCPdikaMCaxvd" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NrSrUnq8WfTMDthm9yjnkf" Name="Input 2" Kind="StateInputPin" />
+                <Pin Id="LQUh3auoQJ7O1rLtWx476r" Name="Input 3" Kind="InputPin" />
+                <Pin Id="EgwVZYtyYgoNWRdZLGyFzJ" Name="Input 4" Kind="InputPin" />
+                <Pin Id="MbdNyuiUYVKLVVoSNWw8kz" Name="Result" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="Bo7AW1BjIaALnTcKUkoMyt" Bounds="308,1029" />
+              <Node Bounds="286,532,231,390" Id="BUJHsJNzSq5OW0C0ACJRLn">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <Pin Id="A9NgIofAgsoLENvKDDqIs4" Name="Force" Kind="InputPin" />
+                <Pin Id="OetFetzTsjfNjtkfHmVUVp" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="Ah3YdLwf8SXNLOewiMMia7" Name="Has Changed" Kind="OutputPin" />
+                <Patch Id="DNE56EVPMkNOBXPP3X1GPI" ManuallySortedPins="true">
+                  <Patch Id="DDg3LX5X72XPQ5YOkuo2jI" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="A8QmX2B5gCEPrn1O2rMi4e" Name="Then" ManuallySortedPins="true" />
+                  <Patch Id="K7Ht3B2KVwcQd6rm5nXCxJ" Name="Update">
+                    <Pin Id="ULDI60S6A5uMI5d6cEKBDX" MergeId="194438" Name="Pizza 1 Creation" Kind="InputPin" Bounds="401,636" />
+                    <Pin Id="BWuG7OlFFlSOcArgnPI4N6" MergeId="194670" Name="Pizza 2 Creation" Kind="InputPin" Bounds="473,656" />
+                    <Pin Id="DF33kTt6KtVQQPrkZzQa2s" MergeId="194862" Name="Pizza 3 Creation" Kind="InputPin" Bounds="520,702" />
+                  </Patch>
+                  <Node Bounds="338,558,123,110" Id="FLnhdsaPvt5LXdNhrVVeA1">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="Txzd6YmZwxXOQeEusC4jli" Name="Break" Kind="OutputPin" />
+                    <Patch Id="LUfXICvgVoVOula0h7z0Fk" ManuallySortedPins="true">
+                      <Patch Id="MX2P3fIzUsLOV59vD890R8" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="SnOf24BTrheLcwlcQkAt4C" Name="Update" ManuallySortedPins="true">
+                        <Pin Id="Tv8xK0NsdUMPGL2Y8PTpMG" Name="Index" Kind="InputPin" />
+                        <Pin Id="IwiJpCoSVnRQAulLztfk21" Name="Break" Kind="OutputPin" />
+                      </Patch>
+                      <Patch Id="Hw6vkz15IWvOWYotLBMLDj" Name="Dispose" ManuallySortedPins="true" />
+                      <Node Bounds="350,603,25,19" Id="C1d8R4kzyfUOmTKoufeKCV">
+                        <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="=" />
+                        </p:NodeReference>
+                        <Pin Id="CnlBCsq7G1NOH3gadm0hFR" Name="Input" Kind="InputPin" />
+                        <Pin Id="IjArS8AAGn4PP8k0DxPdG9" Name="Input 2" Kind="InputPin" />
+                        <Pin Id="A6EhBdZUCh1NR5RTeQMrOH" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="Ef2BdHC2PPZL5jX7KAiOgs" Bounds="352,648" />
+                      <ControlPoint Id="OfB8Rru9K24OZx2URKcsI4" Bounds="412,613" />
+                    </Patch>
+                    <ControlPoint Id="TEjlZ8wYpyCNhFONS9ibkP" Bounds="372,565" Alignment="Top" />
+                    <ControlPoint Id="FZKplIhc0fGPvbaRAVYKT2" Bounds="412,662" Alignment="Bottom" />
+                    <ControlPoint Id="HkYpv24wVB0Nr9P18ZwxYb" Bounds="411,565" Alignment="Top" />
+                  </Node>
+                  <Node Bounds="307,705,36,19" Id="FNh17ZxoUAELu6xc0djY8g">
+                    <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="S+H" />
+                      <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="VRS6BGBt9E6NVYi1u3oUJy" Name="Value" Kind="InputPin" />
+                    <Pin Id="SdXkn3pIyRxLcnmRVjEIm9" Name="Sample" Kind="InputPin" />
+                    <Pin Id="E2YwC69ZqBTN9rIlDSqmAA" Name="Value" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="306,805,199,19" Id="EAxKl0062uhLKb0uulmeTZ">
+                    <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Switch" />
+                      <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="HthD7PALFNJPQkCGzfAfW8" Name="Index" Kind="InputPin" />
+                    <Pin Id="Gsout0J4w1gP8T2e3t1Hol" Name="Input" Kind="InputPin" />
+                    <Pin Id="OQskE10q9YsOKO5ioC1LIg" Name="Input 2" Kind="InputPin" />
+                    <Pin Id="BwFObcmUpfcMXzg6gmne6i" Name="Input 3" Kind="InputPin" />
+                    <Pin Id="Qp3TuWRcSjbO12freP5nwD" Name="Input 4" Kind="InputPin" />
+                    <Pin Id="JYUaKEU8T0CNXo58FIhrjy" Name="Output" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="306,860,79,26" Id="VlnRU3JBjKqM8o5ExeARrI">
+                    <p:NodeReference LastCategoryFullName="Primitive.Delegates.Delegate (0 -&gt; 1)" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Invoke" />
+                      <CategoryReference Kind="FuncType" Name="Delegate (0 -&gt; 1)" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="JilOgpWFDAqPqu5Hcd4Hjv" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="CAer0cxIZ2BMfh4HcaNBv8" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="EVi9Tn3uPn2NYFtYyWSI8o" Bounds="372,538" Alignment="Top" />
+                <ControlPoint Id="UUd2DPP7RIVPS4wdlDlYHM" Bounds="352,538" Alignment="Top" />
+                <ControlPoint Id="AH1BnyfgrPNO8aiCNlHr7j" Bounds="308,916" Alignment="Bottom" />
+              </Node>
+              <Node Bounds="306,954,48,19" Id="CqOtcCfvNmlOQDBoBzAipc">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="CastAs" />
+                </p:NodeReference>
+                <Pin Id="GLl1fRcwnRqNFuunNzL48Y" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HqNlV9PYaKoPbH5Qa5Fwjw" Name="Default" Kind="InputPin" />
+                <Pin Id="O59hCUMHSk4QV3YeWHtVYW" Name="Result" Kind="OutputPin" />
+                <Pin Id="B5LsTVA8lrNLeMwGgfrywP" Name="Success" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="QrE8LEeFvjfPeRGN8kVUPl" Bounds="651,624" />
+              <ControlPoint Id="O521ESgeHHnPShx0FOziDe" Bounds="645,673" />
+              <ControlPoint Id="AkycC3Fpn93N1y46JE3eDA" Bounds="641,717" />
+              <ControlPoint Id="RkobbII6VIWLzOtjqpJbCr" Bounds="231,476" />
+              <ControlPoint Id="IHG9DDcDBwZLTNmhmzCF4r" Bounds="641,754" />
+              <ControlPoint Id="Vg76BZ9UM0tN2DrEaQvNkS" Bounds="690,378" />
+            </Canvas>
+            <Patch Id="UO1363JPOkeN3u0lWe5MHt" Name="Create" />
+            <Patch Id="Ur0wBvFoDHYQEh8pHPfPZP" Name="Update" ManuallySortedPins="true">
+              <Pin Id="O9bnEiUQYtFP2kXzubHql4" Name="Input" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="RpuRDQz1Q60NTEwEfRCnbn" Name="Pizza Type 1" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="JhkQarFZA4LMiu0oLKdhA8" Name="Pizza Type 2" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="VjbTAPUuGLZLGYFCH9Qz3v" Name="Pizza Type 3" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="RT7AILA77neOPwma8SPne9" Name="Pizza Type 4" Kind="InputPin" Bounds="690,378">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="Ig4x1ZI9AMnOS1dQNmtsrP" Name="Pizza 1 Creation" Kind="InputPin" Bounds="401,636" />
+              <Pin Id="QedpCPuBlXlPktRPwqKYEv" Name="Pizza 2 Creation" Kind="InputPin" Bounds="473,656" />
+              <Pin Id="HMzz3J6TsBsPONZLvGMMs7" Name="Pizza 3 Creation" Kind="InputPin" Bounds="520,702" />
+              <Pin Id="JhEXNMoRvBRLYZKDradsED" Name="Pizza 4 Creation" Kind="InputPin" Bounds="641,754" />
+              <Pin Id="S9PiR1wW5SeMkuQdzKS9I0" Name="Force" Kind="InputPin" Bounds="230,467">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="PDTQUgWf1hHPeHPOdLTxiC" Name="Result" Kind="OutputPin" Bounds="307,832">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="IPizza" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <!--
+
+    ************************  ************************
+
+-->
+            <ProcessDefinition Id="E60Ciss2C2jPYhiispSWyO">
+              <Fragment Id="OsitejvX6zzNASOwpFR2DS" Patch="UO1363JPOkeN3u0lWe5MHt" Enabled="true" />
+              <Fragment Id="DuBe1N8ExVrMmzjrI3Oy0w" Patch="Ur0wBvFoDHYQEh8pHPfPZP" Enabled="true" />
+            </ProcessDefinition>
+            <Link Id="Cbr84cvz1jhL19kXjvXUJ7" Ids="RpuRDQz1Q60NTEwEfRCnbn,T60O9GdQmotQBeUeQcHF6o" IsHidden="true" />
+            <Link Id="MHEKIuH5yS9OltASfIu5S1" Ids="JhkQarFZA4LMiu0oLKdhA8,EUWiR5d7DQ9Piwruq3Pa61" IsHidden="true" />
+            <Link Id="PMb86V1Z0IfMUrZpokPv9T" Ids="VjbTAPUuGLZLGYFCH9Qz3v,DnDREvQoCszNvL2LuutSAd" IsHidden="true" />
+            <Link Id="OaSZjyZ1PuCMO0pXOYn7E3" Ids="O9bnEiUQYtFP2kXzubHql4,EGYWtk8mDMKMoEP4GuWSRS" IsHidden="true" />
+            <Link Id="BdctHKjeivjMyuJkIRZ8mw" Ids="DnDREvQoCszNvL2LuutSAd,LQUh3auoQJ7O1rLtWx476r" />
+            <Link Id="JCqqFHGwLT8Mndv0pCGFOb" Ids="EUWiR5d7DQ9Piwruq3Pa61,NrSrUnq8WfTMDthm9yjnkf" />
+            <Link Id="TUp1qLhi29IODCwvMjLqJi" Ids="T60O9GdQmotQBeUeQcHF6o,L0dKwTEZFyCPdikaMCaxvd" />
+            <Link Id="LJY95pKDzeSL9QY8yIjjJH" Ids="Bo7AW1BjIaALnTcKUkoMyt,PDTQUgWf1hHPeHPOdLTxiC" IsHidden="true" />
+            <Link Id="CqOYzeDAz2zPS9mjuLrPQR" Ids="TEjlZ8wYpyCNhFONS9ibkP,IjArS8AAGn4PP8k0DxPdG9" />
+            <Link Id="S2lgtpAw5LaPhtbtR5slXH" Ids="Ef2BdHC2PPZL5jX7KAiOgs,IwiJpCoSVnRQAulLztfk21" IsHidden="true" />
+            <Link Id="LVZ6xDGt6ncOUIkJxKVl4p" Ids="A6EhBdZUCh1NR5RTeQMrOH,Ef2BdHC2PPZL5jX7KAiOgs" />
+            <Link Id="DW2oxVojAqMPxPSNECHdwU" Ids="Tv8xK0NsdUMPGL2Y8PTpMG,OfB8Rru9K24OZx2URKcsI4" IsHidden="true" />
+            <Link Id="QK6VRSuJd87QHWNcZk88Gw" Ids="HkYpv24wVB0Nr9P18ZwxYb,FZKplIhc0fGPvbaRAVYKT2" IsFeedback="true" />
+            <Link Id="AEqdlpkoDGiLX6Uze62U5x" Ids="OfB8Rru9K24OZx2URKcsI4,FZKplIhc0fGPvbaRAVYKT2" />
+            <Link Id="HgoWbVezzARMa8BSiEbPFt" Ids="Txzd6YmZwxXOQeEusC4jli,SdXkn3pIyRxLcnmRVjEIm9" />
+            <Link Id="UBQiVZPQSSRNGvuVKJo6tW" Ids="FZKplIhc0fGPvbaRAVYKT2,VRS6BGBt9E6NVYi1u3oUJy" />
+            <Link Id="MpMFKf055kWMv6i2vo4nWz" Ids="E2YwC69ZqBTN9rIlDSqmAA,HthD7PALFNJPQkCGzfAfW8" />
+            <Link Id="ObHtqUw2GaMPkr1ZC8N6Jb" Ids="JYUaKEU8T0CNXo58FIhrjy,JilOgpWFDAqPqu5Hcd4Hjv" />
+            <Link Id="KvzrpK3k04RNn9S02y9d0i" Ids="QrE8LEeFvjfPeRGN8kVUPl,Gsout0J4w1gP8T2e3t1Hol" />
+            <Link Id="BeAfXDYTcImP3Hj65mCx5G" Ids="O521ESgeHHnPShx0FOziDe,OQskE10q9YsOKO5ioC1LIg" />
+            <Link Id="VRP9JFKXeTtQZ2XOZEWRdH" Ids="AkycC3Fpn93N1y46JE3eDA,BwFObcmUpfcMXzg6gmne6i" />
+            <Link Id="KqnGqBeM7rWMEMOduqUfLZ" Ids="MbdNyuiUYVKLVVoSNWw8kz,EVi9Tn3uPn2NYFtYyWSI8o" />
+            <Link Id="KNqlnr9eU6rMe2TRTKehZq" Ids="EVi9Tn3uPn2NYFtYyWSI8o,TEjlZ8wYpyCNhFONS9ibkP" />
+            <Link Id="UVMxOZdhldNPc1IgHbW56k" Ids="EGYWtk8mDMKMoEP4GuWSRS,UUd2DPP7RIVPS4wdlDlYHM" />
+            <Link Id="Bbw4l7XwfIELD0IyLS4ayn" Ids="UUd2DPP7RIVPS4wdlDlYHM,CnlBCsq7G1NOH3gadm0hFR" />
+            <Link Id="K01EAIDO9jeNVBdvoWEar7" Ids="CAer0cxIZ2BMfh4HcaNBv8,AH1BnyfgrPNO8aiCNlHr7j" />
+            <Link Id="RZR89oyKFdYO5wnNxKmCER" Ids="AH1BnyfgrPNO8aiCNlHr7j,GLl1fRcwnRqNFuunNzL48Y" />
+            <Link Id="MmmHmsB31TJOwPvxtEMAxE" Ids="Ig4x1ZI9AMnOS1dQNmtsrP,QrE8LEeFvjfPeRGN8kVUPl" IsHidden="true" />
+            <Link Id="LjycnZmGysNMVL7yv1LWm6" Ids="QedpCPuBlXlPktRPwqKYEv,O521ESgeHHnPShx0FOziDe" IsHidden="true" />
+            <Link Id="JIRwRomGQjkMwdHfLOVW1B" Ids="HMzz3J6TsBsPONZLvGMMs7,AkycC3Fpn93N1y46JE3eDA" IsHidden="true" />
+            <Link Id="QbocI9PQkQFMWQ6C8shGX0" Ids="O59hCUMHSk4QV3YeWHtVYW,Bo7AW1BjIaALnTcKUkoMyt" />
+            <Link Id="RuJVpEZiyLXLBHv4beplCY" Ids="RkobbII6VIWLzOtjqpJbCr,A9NgIofAgsoLENvKDDqIs4" />
+            <Link Id="EXyf92MFPjANYxLgwM5VdP" Ids="S9PiR1wW5SeMkuQdzKS9I0,RkobbII6VIWLzOtjqpJbCr" IsHidden="true" />
+            <Link Id="S3DDCphnlEFL8A3eqWmxHt" Ids="IHG9DDcDBwZLTNmhmzCF4r,Qp3TuWRcSjbO12freP5nwD" />
+            <Link Id="Q2gpRjsXCcTLrXJ8unciLr" Ids="JhEXNMoRvBRLYZKDradsED,IHG9DDcDBwZLTNmhmzCF4r" IsHidden="true" />
+            <Link Id="OU0den3uewPNMUAg2qUxlo" Ids="Vg76BZ9UM0tN2DrEaQvNkS,EgwVZYtyYgoNWRdZLGyFzJ" />
+            <Link Id="OVOSk1BfEXzNal3Hf23GMH" Ids="RT7AILA77neOPwma8SPne9,Vg76BZ9UM0tN2DrEaQvNkS" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="E1m3SGcjSRBNgnHJ5BZ68t">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Vdz24Xu6KgqPwo29YmTip7">
+        <Canvas Id="LagydsjcqbIPjdovpOaPuo" CanvasType="Group" />
+        <Patch Id="BdHLHWt57LqLN0ikhPSRM0" Name="Create" />
+        <Patch Id="HCRMeC3DlhkPhTzBWzhbxp" Name="Update" />
+        <ProcessDefinition Id="FjlK3mwdmXCNTdrfBG1RAV">
+          <Fragment Id="AJznBykYoTNLwbDJyF3rDX" Patch="BdHLHWt57LqLN0ikhPSRM0" Enabled="true" />
+          <Fragment Id="CKGG9kgiahwLdShtsPPDsL" Patch="HCRMeC3DlhkPhTzBWzhbxp" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="TrIqsHTCdGlLNCgNIFALu7" Location="VL.Skia" Version="2019.1.0-0959-g3a31ab0c51" />
+</Document>
